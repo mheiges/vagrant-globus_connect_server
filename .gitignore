@@ -1,0 +1,8 @@
+.DS_Store
+scratch/*
+.vagrant
+puppet/**/hieradata/sensitive.yaml
+puppet/modules
+puppet/.tmp
+puppet/.librarian
+nolibrarian

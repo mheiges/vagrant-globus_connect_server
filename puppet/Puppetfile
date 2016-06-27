@@ -1,0 +1,19 @@
+forge 'https://forgeapi.puppetlabs.com'
+
+mod 'stahnma/epel'
+mod 'puppetlabs/stdlib'
+mod 'crayfishx/firewalld'
+
+mod 'ebrc/ebrc_yum_repo',
+  :git => 'git@github.com:EuPathDB/puppet-ebrc_yum_repo.git'
+
+mod 'ebrc/globus_connect_server',
+  :git => 'git@github.com:EuPathDB/puppet-globus_connect_server.git'
+
+mod 'local/profiles',
+  :path => './src/profiles'
+  :latest
+
+mod 'local/roles',
+  :path => './src/roles'
+  :latest

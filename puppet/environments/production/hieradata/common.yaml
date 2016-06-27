@@ -1,0 +1,6 @@
+---
+
+globus::config::endpoint_name: 'ebrc'
+globus_connect_server::config::gcs_globus_user: see sensitive.yaml
+globus_connect_server::config::gcs_globus_password: see sensitive.yaml
+globus_connect_server::config::gcs_endpoint_name: see sensitive.yaml

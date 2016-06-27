@@ -1,0 +1,40 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    crayfishx-firewalld (2.2.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
+    puppetlabs-stdlib (4.12.0)
+    stahnma-epel (1.2.2)
+      puppetlabs-stdlib (>= 3.0.0)
+
+GIT
+  remote: git@github.com:EuPathDB/puppet-ebrc_yum_repo.git
+  ref: master
+  sha: 2e75a0de6b7e4da022a1a4de7ee5306b5fcc0a4d
+  specs:
+    ebrc-ebrc_yum_repo (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
+
+GIT
+  remote: git@github.com:EuPathDB/puppet-globus.git
+  ref: master
+  sha: 19bdf0505712554723d952c9b19372486f657c3e
+  specs:
+    ebrc-globus (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
+
+PATH
+  remote: ./src/profiles
+  specs:
+    local-profiles (0.0.0)
+      crayfishx-firewalld (>= 0)
+      ebrc-ebrc_yum_repo (>= 0)
+
+DEPENDENCIES
+  crayfishx-firewalld (>= 0)
+  ebrc-ebrc_yum_repo (>= 0)
+  ebrc-globus (>= 0)
+  local-profiles (>= 0)
+  puppetlabs-stdlib (>= 0)
+  stahnma-epel (>= 0)
+
