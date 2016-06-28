@@ -16,11 +16,11 @@ GIT
       puppetlabs-stdlib (>= 1.0.0)
 
 GIT
-  remote: git@github.com:EuPathDB/puppet-globus.git
+  remote: git@github.com:EuPathDB/puppet-globus_connect_server.git
   ref: master
-  sha: 19bdf0505712554723d952c9b19372486f657c3e
+  sha: a557c97cfb1724b43fd74b9b57382232d3bc706f
   specs:
-    ebrc-globus (0.1.0)
+    ebrc-globus_connect_server (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
 
 PATH
@@ -30,11 +30,17 @@ PATH
       crayfishx-firewalld (>= 0)
       ebrc-ebrc_yum_repo (>= 0)
 
+PATH
+  remote: ./src/roles
+  specs:
+    local-roles (0.0.1)
+
 DEPENDENCIES
   crayfishx-firewalld (>= 0)
   ebrc-ebrc_yum_repo (>= 0)
-  ebrc-globus (>= 0)
+  ebrc-globus_connect_server (>= 0)
   local-profiles (>= 0)
+  local-roles (>= 0)
   puppetlabs-stdlib (>= 0)
   stahnma-epel (>= 0)
 
