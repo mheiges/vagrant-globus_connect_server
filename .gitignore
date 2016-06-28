@@ -6,3 +6,4 @@ puppet/modules
 puppet/.tmp
 puppet/.librarian
 nolibrarian
+hiera.yaml.rpmsave
