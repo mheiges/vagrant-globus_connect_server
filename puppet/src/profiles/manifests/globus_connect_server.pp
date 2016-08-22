@@ -15,36 +15,36 @@ class profiles::globus_connect_server {
   # 7512 tcp,        # myproxy
   #
   firewalld_rich_rule { 'Globus Connect control channel':
-    ensure    => present,
-    zone      => 'public',
-    port      => {
-      'port'     => $globus_connect_server::config::gsc_gridftp_control_channel_port,
+    ensure => present,
+    zone   => 'public',
+    port   => {
+      'port'     => $::globus_connect_server::config::gsc_gridftp_control_channel_port,
       'protocol' => 'tcp',
     },
-    action    => 'accept',
+    action => 'accept',
   }
 
   firewalld_rich_rule { 'Globus MyProxy':
-    ensure    => present,
-    zone      => 'public',
-    port      => {
-      'port'     => $globus_connect_server::config::gcs_myproxy_port,
+    ensure => present,
+    zone   => 'public',
+    port   => {
+      'port'     => $::globus_connect_server::config::gcs_myproxy_port,
       'protocol' => 'tcp',
     },
-    action    => 'accept',
+    action => 'accept',
   }
 
   ['udp','tcp'].each |$protocol| {
     firewalld_rich_rule { "Globus Connect data channel, ${protocol}":
-      ensure    => present,
-      zone      => 'public',
-      port      => {
+      ensure => present,
+      zone   => 'public',
+      port   => {
         'port'     => inline_template(
           "'<%= scope['::globus_connect_server::config::gcs_gridftp_incomingportrange'].gsub(/[:,]/, '-') %>'"
         ),
         'protocol' => $protocol,
       },
-      action    => 'accept',
+      action => 'accept',
     }
   }
 
