@@ -5,10 +5,10 @@ mod 'puppetlabs/stdlib'
 mod 'crayfishx/firewalld'
 
 mod 'ebrc/ebrc_yum_repo',
-  :git => 'git@github.com:EuPathDB/puppet-ebrc_yum_repo.git'
+  :git => 'https://github.com/EuPathDB/puppet-ebrc_yum_repo.git'
 
 mod 'ebrc/globus_connect_server',
-  :git => 'git@github.com:EuPathDB/puppet-globus_connect_server.git'
+  :git => 'https://github.com/EuPathDB/puppet-globus_connect_server.git'
 
 mod 'local/profiles',
   :path => './src/profiles'

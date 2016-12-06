@@ -8,7 +8,7 @@ FORGE
       puppetlabs-stdlib (>= 3.0.0)
 
 GIT
-  remote: git@github.com:EuPathDB/puppet-ebrc_yum_repo.git
+  remote: https://github.com/EuPathDB/puppet-ebrc_yum_repo.git
   ref: master
   sha: 2e75a0de6b7e4da022a1a4de7ee5306b5fcc0a4d
   specs:
@@ -16,7 +16,7 @@ GIT
       puppetlabs-stdlib (>= 1.0.0)
 
 GIT
-  remote: git@github.com:EuPathDB/puppet-globus_connect_server.git
+  remote: https://github.com/EuPathDB/puppet-globus_connect_server.git
   ref: master
   sha: a557c97cfb1724b43fd74b9b57382232d3bc706f
   specs:
