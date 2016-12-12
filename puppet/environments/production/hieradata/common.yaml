@@ -1,6 +1,11 @@
 ---
 
 globus_connect_server::config::gcs_endpoint_name: 'ebrcvm'
-globus_connect_server::config::gcs_endpoint_public: true
+globus_connect_server::config::gcs_endpoint_public: 'True'
 #globus_connect_server::config::gcs_globus_user: see sensitive.yaml
 #globus_connect_server::config::gcs_globus_password: see sensitive.yaml
+
+
+globus_connect_server::config::gcs_gridftp_restrictpaths:
+  - 'R/var/www/Common/apiSiteFilesMirror/downloadSite'
+  - 'R/var/www/Common/apiSiteFilesMirror/globusGenomesShare'
